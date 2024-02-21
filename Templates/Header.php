@@ -28,18 +28,32 @@ class Header
             <link rel="stylesheet" href="/css/style.css">
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        </head>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            </head>
         <header>
-            <nav class="d-flex align-items-center justify-content-around">
+            <nav class="d-flex align-items-center justify-content-around" id="main-menu>
                 <div>
-                    <img src="/img/logo.jpg" class="logo-img">
+                    <a href=""><img src="/img/logo.jpg" class="logo-img"></a>
                 </div>
                 <ul class="d-flex">
-                    <li><a href="">Maps</a></li>
-                    <li><a href="">Player</a></li>
-                    <li><a href="">Sign in</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Player</a></li>
+                    <li><a href="#">Sign in</a></li>
                 </ul>
             </nav>
+
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <h3>Cs2 Smokes</h3>
+                <ul>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Player</a></li>
+                <li><a href="#">Sign in</a></li>
+                </ul>
+            </nav>
+            </label>
+
         </header>
         <hr>
         ';
